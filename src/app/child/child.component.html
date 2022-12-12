@@ -1,0 +1,10 @@
+<h2>Child</h2>
+<div class="row">
+    <p>
+        Say {{messageFromParent}}
+    </p>
+    <hr>
+    <p><b>Message from Sibling Via Service:</b> {{messageReceivedFromService}}</p>
+    <br>
+    <button class="btn btn-primary" (click)="sendMessageFromChildToParentComponent()">Send Message to Parent Via Output + E. Emitter</button>
+</div>

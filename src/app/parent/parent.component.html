@@ -1,0 +1,20 @@
+
+        <div class="card">
+            <div class="card-header">
+                <h1>Parent</h1>
+                
+                <p><b>Message from Child Via Output + Event Emitter:</b> {{messageReceivedFromChild}}</p>
+                
+                <hr>
+                
+                <p><b>Message from Child Via ViewChild:</b> {{messageReceivedFromChildViaViewChild}}</p>
+                
+                <hr>
+
+                <p><b>Message from Sibling Via Service:</b> {{messageReceivedFromService}}</p>
+            </div>
+            <div class="card-body">
+                <child (messageEventEmitterFromChild)="receiveMessage($event)" [messageFromParent] = "messageFromParent"></child>
+            </div>
+        </div>
+
